@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    /* background: linear-gradient(to right, #4030adc4 0%, #1c3ab1f0 100%); */
+    background: royalblue;
+    font-weight: bold;
+    width: 100%;
+
+}
+
+/* 
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 6%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: royalblue
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 6%;
+    /* position: fixed; */
+    width: 100%;
+    top: 0;
+    background: royalblue
+}
+
+
+a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+a:hover {
+    color: rgb(0, 119, 255);
+
+}
+
+a.active {
+    color: rgb(209, 209, 228)
+}
+
+
+.icon {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile__nav_links {
+    display: none;
+}
+
+/* .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 6%;
+} */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 6%;
+}
+
+.hero__image img {
+    width: 90%;
+}
+
+.hero__text h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn1 {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.features {
+    color: rgb(20, 62, 199);
+    text-align: center;
+    margin-top: 8%;
+
+}
+
+.features h2 {
+    font-size: 30px;
+}
+
+.features h4 {
+    font-size: 15px;
+}
+
+.line {
+    width: 5%;
+    color: rgb(20, 62, 199);
+    margin: auto;
+    margin-top: 1%;
+
+}
+
+.card {
+    color: rgb(20, 62, 199);
+    background: whitesmoke;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    transition: all ease-in-out 0.5s;
+}
+
+.card:hover {
+    width: 72%;
+}
+
+.card__title {
+    padding: 10%;
+    font-family: monospace;
+    letter-spacing: 10px;
+    line-height: 4;
+
+
+}
+
+.card__title h2 {
+    font-weight: bolder;
+
+}
+
+.card__body {
+    text-align: left;
+}
+
+.oCard {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banner {
+    background: linear-gradient(rgba(15, 11, 252, 0.5), rgba(5, 11, 252, 0.5)), url(assets/banner.jpeg);
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2% 4%;
+    color: royalblue;
+    text-align: center;
+}
+
+.about__text {
+    width: 50%;
+}
+
+.about__text p {
+    padding: 20px 0;
+    color: #828ed0;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.about__text h2 {
+    font-size: 2em;
+}
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .hero {
+        flex-direction: column;
+        padding-top: 5%;
+    }
+
+    .hero__text {
+        text-align: center;
+    }
+
+    .hero__image {
+        margin-top: 5%;
+    }
+
+    .hero__image img {
+        width: 99%;
+    }
+
+    .hero__text h1 {
+        font-size: 3em;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .oCard {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card:hover {
+        width: 72%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about__img img {
+        width: 80%;
+    }
+
+
+    .about__text h2 {
+        font-size: 1.5em;
+    }
+}
+
+
+
+
+
+@media (max-width:650px) {
+
+    .nav_links {
+        display: none;
+    }
+
+    .mobile__nav_links {
+        display: none;
+    }
+
+    .mobile__nav_links.active {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:500px) {
+    .about__text {
+        width: 100%;
+    }
+}
